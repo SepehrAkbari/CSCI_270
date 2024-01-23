@@ -7,9 +7,10 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
+    position: relative;
 }
 
 h1, h3 {
@@ -49,6 +50,23 @@ a {
     color: #158cba;
     text-decoration: none;
 }
-a:hover {
+a:hover, li a:hover {
     text-decoration: underline;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+}
+
+.favicon {
+    margin-top: 18px;
+}
+
+.p2 {
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: top;
+    line-height: 1.2;
 }
