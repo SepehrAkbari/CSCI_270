@@ -1,13 +1,24 @@
+/*
+* Accent color (red) : #BE2121
+* Background, Primary (black): #262626 | #282828
+* Text, Secondary (white): #F1F1F1 | #ECECEC
+* ^^ (reverse for light mode)
+*/
+
 body {
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin: auto;
 }
 
-.container {
-    max-width: 900px;
+#head {
+    height: 150px;
+}
+
+#page_wrapper {
+    width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     position: relative;
@@ -50,6 +61,16 @@ a {
     color: #158cba;
     text-decoration: none;
 }
+
+.special_a {
+    color: #666666;
+}
+
+.special_a:hover {
+    color: #158cba;
+    text-decoration: underline;
+}
+
 a:hover, li a:hover {
     text-decoration: underline;
 }
@@ -60,13 +81,27 @@ a:hover, li a:hover {
     right: 10px;
 }
 
-.favicon {
-    margin-top: 18px;
-}
-
 .p2 {
     display: inline-block;
     margin-left: 15px;
     vertical-align: top;
     line-height: 1.2;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    min-height: 150px;
+}
+
+.cc-r {
+    text-align: right;
+}
+
+.cc-c {
+    text-align: center;
+}
+
+.cc-l {
+    text-align: left;
 }
