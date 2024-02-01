@@ -38,17 +38,17 @@ h3 {
     margin-bottom: 5px;
 }
 
+ul, ol {
+    padding-left: 40px;
+}
+
 p, li, a{
     color: #666666;
     line-height: 1.8;
     text-align: justify;
 }
 
-ul, ol {
-    padding-left: 40px;
-}
-
-.navi li a{
+.navi li a.navLnk{
     text-decoration: none;
     color: #158cba;
 } 
@@ -57,9 +57,22 @@ ul, ol {
     margin-bottom: 30px;
 }
 
-a {
+a.drctLnk, a.navLnk{
     color: #158cba;
     text-decoration: none;
+}
+
+a.drctLnk:hover, li a.navLnk:hover {
+    text-decoration: underline;
+}
+
+a.drctLnk:active, li a.navLnk:active {
+    color: #075e81;
+}
+
+a.drctLnk:visited, li a.navLnk:visited {
+    font-style: italic;
+    color: #075e81;
 }
 
 .special_a {
@@ -71,8 +84,23 @@ a {
     text-decoration: underline;
 }
 
-a:hover, li a:hover {
+.special_a:active {
+    color: #075e81;
     text-decoration: underline;
+    font-weight: 400;
+}
+
+a.btn {
+    background-color: #158cba;
+    color: white;
+    padding: 12px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.btn:hover, a.btn:active {
+    background-color: #075e81;
 }
 
 .logo {
@@ -92,6 +120,13 @@ a:hover, li a:hover {
     display: flex;
     justify-content: space-between;
     min-height: 150px;
+}
+
+.footer_hr {
+    border: 0px;
+    border-top: 1px solid #666666;    
+    border-bottom: 1px solid #434343;
+    height: 0.5px;
 }
 
 .cc-r {
