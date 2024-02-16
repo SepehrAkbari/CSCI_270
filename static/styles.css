@@ -62,6 +62,14 @@ div.col75 {
     padding: 10px;
 }
 
+div.col100 {
+    box-sizing: border-box;
+    float: left;   
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+}
+
 .clear_float  {
     clear: both; 
  }
@@ -196,3 +204,32 @@ a.btn:hover, a.btn:active {
     text-align: left;
 }
 
+.special_bullet {
+    list-style-image: url("../images/icons/chevron_right_FILL0_wght400_GRAD0_opsz24.svg");
+    list-style-position: outside;
+}
+
+#nav {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#nav .active_nav a{
+    color: #158cba;
+}
+
+#nav li {
+    display: inline-block;
+}
+
+#nav li a {
+    color: #333333;
+    display: block;
+    margin: 0 50px;
+    text-decoration: none;
+}
+
+#nav li a:hover, #nav li a:active {
+    color: #158cba;
+}
