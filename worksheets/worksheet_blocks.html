@@ -94,6 +94,25 @@
   	  background-color:#EEE;
   	}
 
+    /* New CSS added: */
+
+    #my_parent {
+      background-color: #edcc27;
+      color: #961313;
+      border: 2px solid #da7305;
+      cursor: pointer;
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      font-style: italic;
+      font-weight: bold;
+      margin: 30px;
+      padding: 30px;
+      width: 300px;
+    }
+
+    #my_child {
+      border: 2px solid #d20e0e;
+    }
 
   </style>
 
@@ -173,21 +192,21 @@
               </tr>
               <tr>
                 <td>Red Block</td>
-                <td></td>
-                 <td></td>
-                <td></td>
+                <td><b>500</b></td>
+                <td><b>544</b> = 500+10+4+30</td>
+                <td><b>514</b> = 500+10+4</td>
               </tr>
               <tr>
                 <td>Green Block</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><b>486</b> = 500-4-10</td>
+                <td><b>530</b> = 500+30</td>
+                <td><b>500</b></td>
               </tr>
               <tr>
                 <td>Blue Block</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><b>500</b></td>
+                <td><b>554</b>= 500+14+20+20</td>
+                <td><b>514</b> = 500+14</td>
               </tr>
           </table>
        </div>
@@ -199,7 +218,7 @@
       <div class="section">
         Notice the style class names for the three blocks above.  Are those good style class names to use in practice?  Why or why not?
         <div class="answer">
-
+          They are not wrong, but less than ideal. For example, if you were to change a background color, then the style class names would no longer be accurate unless you change them too.  It's best to use names indicating the purpose of the style classes (e.g. box_model_exercise1, box_model_exercise2, ...) rather than names dependent upon the values of particular styles inside the class.
         </div>
       </div>
     </fieldset>
@@ -231,7 +250,13 @@
       <div class="section">
         Calculate the <i>content width</i> of the child block and list it below. Briefly explain your calculation.
         <div class="answer">
-
+          <b>268</b>
+          <br><br>
+          Parent content width: 300
+          <br>
+          Child content width: 268 = 300-20-2-10
+          <br><br>
+          The child will expand as much as it can inside the content area of the parent.  The child content width is the parent's content width - child margin - child border - child padding.
         </div>
       </div>
 
@@ -241,7 +266,9 @@
       <div class="section">
         Suppose you apply <i>box-sizing:border-box;</i> to both the parent and child blocks above.  Calculate the <i>content width</i> of the child block and list it below.
         <div class="answer">
-
+        <b>256</b>
+        <br><br>
+        The only difference is the parent content width is only 288 = 300-2-10 since the parent width:300px includes both the parent border and padding because of <i>box-sizing:border-box;</i>.  Thus the child content width is 12 less than in question 3.  Note that <i>box-sizing:border-box;</i> ONLY <i>directly</i> affects the parent block since the child has no width set in the css.
         </div>
       </div>
 
@@ -250,11 +277,11 @@
       <span class="section_title">Question 5:</span>
       <div class="section">
         The grey blocks in this section use CSS ID selectors but the 3 colored blocks in the first section use class selectors.
-        There was no compelling reason to choose one type over the other for this worksheet, other than to contrast the difference.
+        There was no compelling to choose one type over the other for this worksheet, other than to contrast the difference.
         In general, you can always use a class selector instead of an ID selector, but not vise-versa (the other way around).
         Briefly explain why.
         <div class="answer">
-
+          ID selectors can only be applied once in the HTML since you shouldn't use the same ID value twice.  You can create a class selector and only apply it once in the HTML.  But class selectors are more versatile since you can call the same class as many times as you want in the HTML.
         </div>
       </div>
     </fieldset>
@@ -290,7 +317,32 @@
       </div>
 
       <!-- Put the HTML code for your Task here -->
+      <div id="my_parent">
+        This task is to determine what properties from a parent block (like me) are inherited by a child block.
+        <div id="my_child">
+          <p>1) It inhereited all the styles except for border which was made as it was specified in the child block, and also all the css box-model properties (margin, padding, width) which will not be inherited but rather calculated for the child based of the parent. <br>
+            2) The ones that relate to the box-model are not inherited, but the ones that relate to the visual appearance are inherited.</p>
+          </p>
+        </div>
       <!-- Put the CSS for this in a new structured CSS comment block below the other styles in the head section -->
+      <!--
+        #my_parent {
+          background-color: #edcc27;
+          color: #961313;
+          border: 2px solid #da7305;
+          cursor: pointer;
+          text-align: center;
+          font-family: 'Courier New', Courier, monospace;
+          font-style: italic;
+          font-weight: bold;
+          margin: 30px;
+          padding: 30px;
+          width: 300px;
+        }
+        #my_child {
+          border: 2px solid #d20e0e;
+        }
+      -->
 
 
     </fieldset>
