@@ -5,12 +5,25 @@
 * ^^ (reverse for light mode)
 */
 
+/* Configs */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @font-face {
     font-family: 'Fortuna';
     src: url(../fonts/Fortuna\ Regular.ttf) format('truetype');
-  }
+}
+
+.clear_float  {
+    clear: both; 
+}
+
+.special_bullet {
+    list-style-image: url("../images/icons/chevron_right_FILL0_wght400_GRAD0_opsz24.svg");
+    list-style-position: outside;
+}
+
+/* Body */
 
 body {
     font-family: "Poppins", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -19,6 +32,15 @@ body {
     justify-content: center;
     margin: auto;
 }
+
+#page_wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Columns */
 
 div.col25 {
     box-sizing: border-box;
@@ -70,20 +92,7 @@ div.col100 {
     padding: 10px;
 }
 
-.clear_float  {
-    clear: both; 
- }
-
-#head {
-    height: 150px;
-}
-
-#page_wrapper {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    position: relative;
-}
+/* Element Styles */
 
 h1, h3 {
     font-family: "Fortuna";
@@ -110,14 +119,7 @@ p, li, a{
     text-align: justify;
 }
 
-.navi li a.navLnk{
-    text-decoration: none;
-    color: #158cba;
-} 
-
-.navi {
-    margin-bottom: 30px;
-}
+/* Link Styles */
 
 a.drctLnk, a.navLnk{
     color: #158cba;
@@ -166,18 +168,26 @@ a.btn:hover, a.btn:active {
     background-color: #075e81;
 }
 
+/* Hero Section */
+
+#header {
+    height: 150px;
+}
+
 .logo {
     position: absolute;
     top: 25px;
-    right: 10px;
+    right: 30px;
 }
 
-.p2 {
-    display: inline-block;
-    margin-left: 15px;
-    vertical-align: top;
-    line-height: 1.2;
+.hero-bg {
+    background-image: url("../images/pics/blue-sky.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
 }
+
+/* Footer Section */
 
 #footer {
     display: flex;
@@ -204,10 +214,7 @@ a.btn:hover, a.btn:active {
     text-align: left;
 }
 
-.special_bullet {
-    list-style-image: url("../images/icons/chevron_right_FILL0_wght400_GRAD0_opsz24.svg");
-    list-style-position: outside;
-}
+/* Navigation */
 
 #nav {
     list-style-type: none;
