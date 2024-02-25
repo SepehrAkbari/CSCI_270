@@ -176,7 +176,7 @@ a.btn:hover, a.btn:active {
 
 .logo {
     position: absolute;
-    top: 25px;
+    top: 20px;
     right: 30px;
 }
 
@@ -185,6 +185,7 @@ a.btn:hover, a.btn:active {
     background-size: cover;
     background-position: center;
     height: 300px;
+    /* opacity: 0.9; */
 }
 
 /* Footer Section */
