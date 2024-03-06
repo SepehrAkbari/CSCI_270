@@ -169,11 +169,11 @@ a.btn:hover, a.btn:active {
     background-color: #075e81;
 }
 
-/* Hero Section */
-
-#header {
-    height: 150px;
+#main {
+    min-height: 500px;
 }
+
+/* Hero Section */
 
 .logo {
     position: absolute;
