@@ -6,7 +6,7 @@
 
 $emailFrom = "akbaris79@lakeforest.edu";
 $emailTo = "akbaris79@lakeforest.edu";
-$subject = "Thanks for contacting me!";
+$subject = "New Message | CSCI 270";
 
 //////////////////////////////////////////////////////////////////////////
 // DONT Edit below here unless you know what you are doing.
