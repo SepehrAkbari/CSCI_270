@@ -42,7 +42,8 @@
                         <li class=<?= isset($Blocks) ? "active_nav":"na" ?>><a href="/~akbaris79/csci270/site/blocks_page/blocks.php">Blocks</a></li>
                         <li class=<?= isset($Images) ? "active_nav":"na" ?>><a href="/~akbaris79/csci270/site/images_page/images.php">Images</a></li>
                         <li class=<?= isset($Positioning) ? "active_nav":"na" ?>><a href="/~akbaris79/csci270/site/positioning_page/positioning.php">Positioning</a></li>
-                        <li class=<?= isset($Contact) ? "active_nav":"na" ?>><a href="/~akbaris79/csci270/site/contact_page/contact_form.php">Contact</a></li>
+                        <li><a href="/~akbaris79/csci270/site/responsive_page/responsive_example.html" target="_blank">RWD</a></li>   
+                        <li class=<?= isset($Contact) ? "active_nav":"na" ?>><a href="/~akbaris79/csci270/site/contact_page/contact_form.php">Contact</a></li> 
                     </ul>
                 </div>
                 <div class="clear_float"></div>
