@@ -2,7 +2,11 @@
             <hr class="footer_hr">
             <div id="footer">
                 <div class="col33">
-                    <p class="cc-l"><a href="http://www.lakeforest.edu" target="_blank" class="drctLnk">lakeforest.edu</a></p>
+                    <p class="cc-l">
+                        <a href="http://www.lakeforest.edu" target="_blank" class="drctLnk">lakeforest.edu</a>
+                        |
+                        <a href="https://youtu.be/8oE5Z2GLhNc?si=w6nhcaLMigWhHB_6" target="_blank" class="drctLnk">Surprise</a>
+                    </p>
                 </div>
                 <div class="col33">
                     <p class="cc-c">© 2024 <a href="/~akbaris79/" target="_blank" class="special_a">Sepehr Akbari</a></p>
