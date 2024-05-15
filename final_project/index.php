@@ -35,6 +35,7 @@ $Home = true;
                         Welcome to my art portfolio! I'm thrilled to have you step into my creative space and explore the collection of works I've poured my heart and soul into.  These pieces represent a journey - a visual chronicle of my artistic development, the ideas that ignite my passion, and the way I see and interpret the world around me. As you delve deeper, you'll encounter a diverse range of styles and mediums, each one a testament to my artistic exploration.  Whether it's the vectors representing objects, vibrant colors telling stories, or imaginary shapes that evoke emotions, each piece is a reflection of my unique perspective. I hope you'll find something that resonates with you, that sparks a conversation within, or simply leaves you with a sense of wonder.  So, take your time, browse freely, and let the art speak to you!                     
                     </p>
                 </div>
+            </div>
         </div>
 
 
@@ -106,7 +107,9 @@ $Home = true;
                     <br><br>
                     Feel free to reach out, my info is on my contact page!
                     <br><br>
-                    <button type="button" class="btn btn-outline-primary btn-sm"><a class="btn" href="mailto:isepehrakbari@gmail.com" target="_blank">Email</a></button>
+                    <button type="button" class="btn btn-outline-primary btn-sm">
+                        <a class="btn" href="mailto:isepehrakbari@gmail.com" target="_blank">Email</a>
+                    </button>
                 </div>
                 </div>
             </div>
@@ -137,7 +140,7 @@ $Home = true;
                 </div>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 mb-3 mb-sm-0">
                 <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Course Website</h5>
@@ -146,9 +149,7 @@ $Home = true;
                 </div>
                 </div>
             </div>
-        </div>
-        <br>
-        <div class="row">
+            <div class="py-2 d-none d-lg-block"></div>
             <div class="col-sm-6 mb-3 mb-sm-0">
                 <div class="card">
                 <div class="card-body">
@@ -158,7 +159,7 @@ $Home = true;
                 </div>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 mb-3 mb-sm-0">
                 <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Gallery</h5>
