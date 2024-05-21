@@ -12,7 +12,6 @@ $subject = "New Message | ART PORTFOLIO";
 // DONT Edit below here unless you know what you are doing.
 //////////////////////////////////////////////////////////////////////////
 
-
 $name = trim(stripslashes($_POST['Name']));
 $email = trim(stripslashes($_POST['Email']));
 $phone = trim(stripslashes($_POST['Phone']));
@@ -20,7 +19,7 @@ $message = trim(stripslashes($_POST['Message']));
 
 // validation - we don't wan't to accept bogus input from the user
 If ( $name == '' || email_addr_is_bad($email) || $message == '' ) {
-  header ("Location: contact_error.php");
+  header ("Location: error.php");
   exit;
 }
 
@@ -37,10 +36,10 @@ $success = mail($emailTo, $subject, $body, "From: <$emailFrom>");
 
 // redirect to success page
 if ($success) {
-  header ("Location: contact_thanks.php");
+  header ("Location: success.php");
 }
 else {
-  header ("Location: contact_error.php");
+  header ("Location: error.php");
 }
 exit;
 
